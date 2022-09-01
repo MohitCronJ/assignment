@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  src: url("../assets/font/Nunito_Sans/NunitoSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 a {
@@ -13,6 +20,105 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.-topBar--container {
+  width: 100vw;
+  height: 50px;
+  background-color: #034ea2;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.-topBar--span1 {
+  margin-left: 15px;
+  color: #fff;
+  opacity: 30%;
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+.-topBar--span2 {
+  font-size: 18px;
+  position: relative;
+  top: -1px;
+}
+
+.-topBar--button {
+  /* margin-right: 40px; */
+  margin-left: 50px;
+  background-color: #ed0677;
+  height: 100%;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+/* .-appBar--container {
+  width: 100vw;
+  height: 89px;
+  background-color: #fff;
+  display: flex;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  white-space: nowrap;
+} */
+.-hero--container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("https://indegenerep.s3.ap-south-1.amazonaws.com/indegene/images/hero/hero-img.png");
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.-hero--box {
+  padding-left: 280px;
+  padding-top: 120px;
+}
+
+.-hero--text {
+  display: table;
+  background: #034ea2;
+  padding: 0 50px;
+  margin: 5px;
+  color: #fff;
+  font-weight: 200;
+  font-family: "Nunito Sans", sans-serif;
+}
+.-hero--button {
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 45px;
+  background-color: #ed0677;
+  margin-left: 5px;
+  margin-top: 45px;
+}
+
+.-intro--container {
+  border: 2px solid green;
+}
+.-intro--box {
+  display: flex;
+  margin: 50px 300px;
+  border: 2px solid blue;
+}
+.-intro--text {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 2px solid red;
+  line-height: 25px;
+  font-size: 18px;
+}
+.-intro--picture {
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid red;
 }
 
 @media (prefers-color-scheme: dark) {

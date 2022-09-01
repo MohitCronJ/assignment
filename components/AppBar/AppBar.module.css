@@ -1,0 +1,11 @@
+.appBarContainer {
+  width: 100vw;
+  height: 89px;
+  background-color: #fff;
+  display: flex;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  white-space: nowrap;
+}
