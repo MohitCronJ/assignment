@@ -1,0 +1,198 @@
+.Testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
+.FieldSet {
+  border: 0.5rem solid #ffde2f;
+  color: #fff;
+}
+
+.Legend {
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.ContentBox {
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.ContentSection1 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.ContentSection1 .Title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+}
+.FirstQoute {
+  transform: rotate(180deg);
+  font-size: 4rem;
+  margin-right: 1rem;
+}
+
+.LastQoute {
+  font-size: 1rem;
+  transform: scale(4);
+  position: relative;
+  left: 2rem;
+  top: 1.5rem;
+}
+
+.ContentSection2 {
+  margin-top: 2.5rem;
+}
+
+.Name {
+  font-size: 2rem;
+}
+
+.Designation {
+  font-size: 1.2rem;
+  padding-left: 1.3rem;
+}
+
+@media (max-width: 1024px) {
+  .Testimonial {
+    padding: 0 5rem;
+  }
+
+  .FieldSet {
+    border: 0.4rem solid #ffde2f;
+  }
+
+  .Legend {
+    padding: 0 1.3rem;
+  }
+
+  .ContentBox {
+    padding: 2.5rem;
+  }
+
+  .ContentSection1 .Title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+  }
+  .FirstQoute {
+    font-size: 3.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .LastQoute {
+    transform: scale(3.5);
+    left: 1.8rem;
+    top: 1.4rem;
+  }
+
+  .ContentSection2 {
+    margin-top: 2rem;
+  }
+
+  .Name {
+    font-size: 1.8rem;
+  }
+
+  .Designation {
+    font-size: 1.1rem;
+    padding-left: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Testimonial {
+    padding: 0 4rem;
+  }
+  .FieldSet {
+    border: 0.3rem solid #ffde2f;
+  }
+
+  .Legend {
+    padding: 0 1.2rem;
+  }
+
+  .ContentBox {
+    padding: 2.3rem;
+  }
+
+  .ContentSection1 .Title {
+    font-size: 1.5rem;
+  }
+  .FirstQoute {
+    font-size: 3rem;
+    margin-right: 0.6rem;
+  }
+
+  .LastQoute {
+    transform: scale(3);
+    position: relative;
+    left: 1.5rem;
+    top: 1.2rem;
+  }
+
+  .ContentSection2 {
+    margin-top: 1.8rem;
+  }
+
+  .Name {
+    font-size: 1.4rem;
+  }
+
+  .Designation {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .Testimonial {
+    padding: 0;
+  }
+  .FieldSet {
+    border: 0.2rem solid #ffde2f;
+  }
+
+  .Legend {
+    padding: 0 1rem;
+    font-size: 1.4rem;
+  }
+
+  .ContentBox {
+    padding: 1.5rem;
+  }
+
+  .ContentSection1 .Title {
+    font-size: 1.2rem;
+  }
+  .FirstQoute {
+    font-size: 2.5rem;
+    margin-right: 0.6rem;
+  }
+
+  .LastQoute {
+    transform: scale(2.5);
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .ContentSection2 {
+    margin-top: 1.5rem;
+  }
+
+  .Name {
+    font-size: 1.2rem;
+  }
+
+  .Designation {
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+  }
+}

@@ -1,0 +1,160 @@
+.Form {
+  background: #ed0677;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 10rem;
+  color: #fff;
+  gap: 1.5rem;
+}
+
+.FormBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 15rem;
+  gap: 1rem;
+}
+
+.FormSection1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormSection1 .Heading {
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.FormSection2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.FormSection2 .Left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+.FormSection2 .Left .TextField {
+  background-color: #fff;
+}
+
+.FormSection3 {
+  display: flex;
+  align-items: center;
+}
+
+.FormSection4 .Button {
+  background: #034ea2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  width: 20rem;
+}
+
+@media (max-width: 1024px) {
+  .Form {
+    padding: 5rem 8rem;
+  }
+
+  .FormBox {
+    padding: 1rem 8rem;
+  }
+
+  .FormSection1 .Heading {
+    font-size: 2.5rem;
+  }
+
+  .FormSection2 {
+    gap: 1.3rem;
+  }
+
+  .FormSection2 .Left {
+    gap: 0.9rem;
+  }
+
+  .FormSection4 .Button {
+    font-size: 1.5rem;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Form {
+    padding: 4rem 6rem;
+  }
+
+  .FormBox {
+    padding: 1rem 6rem;
+  }
+
+  .FormSection1 .Heading {
+    font-size: 2rem;
+  }
+
+  .FormSection2 {
+    gap: 1rem;
+  }
+
+  .FormSection2 .Left {
+    gap: 0.8rem;
+  }
+
+  .FormSection4 .Button {
+    font-size: 1.2rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .Form {
+    padding: 4rem 6rem;
+  }
+
+  .FormBox {
+    padding: 1rem 1rem;
+  }
+
+  .FormSection1 .Heading {
+    font-size: 1.6rem;
+  }
+
+  .FormSection2 {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .FormSection2 .Left {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .FormSection2 .Left .TextField {
+    width: 20rem;
+  }
+
+  /* .FormSection2 .Right{
+        padding: 1rem 0;
+    } */
+  .FormSection2 .Right .TextAreaField {
+    width: 20rem;
+  }
+  .FormSection4 .Button {
+    font-size: 1.2rem;
+    width: 12rem;
+  }
+}

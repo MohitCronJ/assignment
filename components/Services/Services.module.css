@@ -1,0 +1,60 @@
+.servicesContainer {
+  background-color: #034ea2;
+  color: white;
+  border: 2px solid white;
+}
+.servicesBox {
+  display: flex;
+  margin: 100px 200px;
+}
+.servicesBoxes {
+  max-width: 50%;
+}
+.servicesButton {
+  color: #034ea2;
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 0;
+}
+.servicesButton:hover {
+  color: #fff;
+  background-color: #00c0f3;
+}
+.servicesText {
+  /* padding: 30px; */
+  padding-left: 70px;
+  padding-top: 20px;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1009px) {
+  .servicesBox {
+    display: inline-block;
+    margin: 50px 100px;
+  }
+  .servicesButton {
+    color: #034ea2;
+    height: 50px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .servicesText {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .servicesButton {
+    color: #034ea2;
+    height: 50px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .servicesBox {
+    display: inline-block;
+    margin: 50px 50px;
+  }
+}

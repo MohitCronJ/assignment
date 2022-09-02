@@ -1,0 +1,45 @@
+.CounterHome{
+    background: #034EA2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 15rem;
+    gap: 6rem;
+}
+
+.CounterBox{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 1024px){
+    .CounterHome{
+        background: #034EA2;
+        padding: 6rem 10rem;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .CounterHome{
+        background: #034EA2;
+        padding: 5rem 8rem;
+        gap: 3rem;
+    }
+}
+
+
+
+@media (max-width: 426px){
+    .CounterHome{
+        background: #034EA2;
+        padding: 4rem 6rem;
+        gap: 2rem;
+    }
+    .CounterBox{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        gap: 1;
+    }
+}

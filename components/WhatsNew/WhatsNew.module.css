@@ -1,0 +1,28 @@
+.WhatsNewBox {
+  margin: 50px 150px;
+}
+
+.WhatsNewPictureItem:hover {
+  transform: scale(1.1);
+}
+.WhatsNewPictureGrid {
+  justify-content: center;
+  padding: 50px;
+}
+.WhatsNewPictureItem {
+  width: 250px;
+  margin: 10px;
+}
+.WhatsNewPicturePart {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1009px) {
+}
+@media screen and (max-width: 700px) {
+  .WhatsNewHeading {
+    white-space: nowrap;
+    position: relative;
+    left: -60px;
+  }
+}

@@ -1,0 +1,47 @@
+.FooterContainer {
+  background-color: #034ea2;
+  width: 100%;
+  padding: 50px 250px;
+  white-space: nowrap;
+}
+.FooterBox {
+  color: #fff;
+}
+
+.FooterUpperBox {
+  display: flex;
+  margin-bottom: 30px;
+}
+.FooterLowerBox {
+  display: flex;
+  /* margin-bottom: 30px; */
+}
+
+@media screen and (max-width: 1009px) {
+  .FooterLowerBox {
+    display: none;
+  }
+  .FooterTop {
+    display: none;
+  }
+  .FooterUpperBox {
+    display: block;
+    position: relative;
+    right: 15rem;
+  }
+  .FooterIcons {
+    position: relative;
+    top: 20px;
+    right: 9rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .FooterUpperBox {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .FooterUpperBox {
+    right: 20rem;
+  }
+}

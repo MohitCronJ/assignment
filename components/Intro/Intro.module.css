@@ -1,0 +1,50 @@
+.introContainer {
+  /* height: 400px; */
+}
+.introBox {
+  display: flex;
+  margin: 100px 300px;
+}
+.introText {
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+}
+.introPicture {
+  margin-top: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1009px) {
+  .introBox {
+    display: block;
+    margin: 100px 50px;
+  }
+  .introText {
+    float: left;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .introPicture {
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .introPicture {
+    /* position: relative; */
+    /* right: 45px; */
+  }
+  .videoPlayer {
+    width: 300px;
+    height: 200px;
+  }
+}

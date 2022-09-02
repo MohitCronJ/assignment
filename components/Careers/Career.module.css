@@ -1,0 +1,187 @@
+.CareerHome {
+  display: flex;
+  align-items: center;
+}
+.CareerSection1 {
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  padding-bottom: 1rem;
+}
+.CareerSection1 div {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 45px;
+}
+
+.CareerSection2 {
+  background-image: url("https://indegenerep.s3.ap-south-1.amazonaws.com/images/hero-banner-3.jpeg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  object-fit: cover;
+  display: flex;
+  height: 60rem;
+  position: relative;
+}
+
+.CareerBox {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  width: 60rem;
+  height: 40rem;
+  padding: 4rem 6rem;
+  row-gap: 1.5rem;
+  left: 35%;
+  top: 20%;
+}
+
+.title {
+  word-wrap: break-word;
+  color: #034ea2;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.description {
+  word-wrap: break-word;
+
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0;
+  gap: 0.5rem;
+}
+
+.buttons {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 148.18%;
+  background-color: #ed0677;
+  color: #fff;
+}
+
+.buttons:hover {
+  background-color: #ed0677;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .CareerSection1 div {
+    font-size: 2.3rem;
+  }
+  .CareerSection2 {
+    height: 50rem;
+  }
+
+  .CareerBox {
+    width: 50rem;
+    height: 30rem;
+    padding: 3rem 5rem;
+    row-gap: 1.5rem;
+    left: 35%;
+    top: 20%;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .buttonGroup {
+    gap: 0.5rem;
+  }
+
+  .buttons {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .CareerSection1 div {
+    font-size: 2.2rem;
+  }
+  .CareerSection2 {
+    height: 40rem;
+  }
+
+  .CareerBox {
+    width: 40rem;
+    height: 25rem;
+    padding: 2rem 1rem;
+    row-gap: 1rem;
+    left: 10%;
+    top: 20%;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .buttonGroup {
+    gap: 0.2rem;
+  }
+
+  .buttons {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .CareerSection1 div {
+    font-size: 2rem;
+  }
+
+  .CareerSection2 {
+    height: 40rem;
+  }
+
+  .CareerBox {
+    width: 30rem;
+    height: 25rem;
+    padding: 2rem 3rem;
+    row-gap: 1rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .buttonGroup {
+    gap: 0.3rem;
+  }
+
+  .buttons {
+    font-size: 0.5rem;
+  }
+}

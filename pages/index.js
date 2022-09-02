@@ -1,26 +1,60 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import ErrorPage from "next/error";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import fetch from "node-fetch";
 
-import { TopBar, AppBar, Hero, Intro } from "../components";
+import {
+  TopBar,
+  AppBar,
+  Hero,
+  Intro,
+  Services,
+  WhatsNew,
+  Footer,
+  Careers,
+  TrustedPartner,
+  Testimonial,
+  Form,
+} from "../components";
 
-const Home = () => {
+import CounterHome from "../components/Counter/CounterHome";
+
+const theme = createTheme({});
+
+const Home = (props) => {
+  let data = props.data[0];
+
   return (
-    <>
-      <TopBar />
-      <AppBar />
-      <Hero />
-      <Intro />
-
-      <div>Services</div>
-      <div>Whats New</div>
-      <div>Careers</div>
-      <div>Trusted Partners</div>
-      <div>Counter</div>
-      <div>Testimonials</div>
-      <div>Forms</div>
-      <div>Footer</div>
-    </>
+    <ThemeProvider theme={theme}>
+      <TopBar data={data.appBar} />
+      <AppBar data={data.appBar} />
+      <Hero data={data.hero} />
+      <Intro data={data.intro} />
+      <Services data={data.services} />
+      <WhatsNew data={data.whatNew} />
+      <Careers data={data.careers} />
+      <TrustedPartner data={data.trustedPartner} />
+      <CounterHome data={data.counter} quote={data.testimonial} />
+      <Form />
+      <Footer data={data.footer} />
+    </ThemeProvider>
   );
+};
+
+export const getServerSideProps = async ({ params, res }) => {
+  try {
+    const result = await fetch(
+      `https://indegenerep.s3.ap-south-1.amazonaws.com/cdn/home.json`
+    );
+    const data = await result.json();
+
+    return {
+      props: { data },
+    };
+  } catch {
+    console.log("error");
+  }
 };
 
 export default Home;

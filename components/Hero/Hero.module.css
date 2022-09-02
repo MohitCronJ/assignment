@@ -1,0 +1,84 @@
+.heroContainer {
+  max-width: 100%;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heroBox {
+  padding-left: 280px;
+  padding-top: 120px;
+}
+
+.heroText {
+  display: table;
+  background: #034ea2;
+  padding: 0 50px;
+  margin: 5px;
+  color: #fff;
+  font-weight: 200;
+  font-family: "Nunito Sans", sans-serif;
+}
+.heroButton {
+  font-size: 1.2rem;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 45px;
+  background-color: #ed0677;
+  margin-left: 5px;
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 1009px) {
+  .heroContainer {
+    background-size: contain;
+  }
+  .heroText {
+    background-color: white;
+    color: #034ea2;
+    display: flex;
+    position: relative;
+    left: -250px;
+    top: 70px;
+    background: #034ea2;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+  }
+
+  .heroButton {
+    position: relative;
+    left: -250px;
+    top: 60px;
+  }
+  .heroIcons {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .heroContainer {
+    background-size: contain;
+  }
+  .heroText {
+    background-color: white;
+    color: #034ea2;
+    display: flex;
+    position: relative;
+    left: -300px;
+    top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .heroButton {
+    white-space: nowrap;
+    position: relative;
+    left: -250px;
+    top: 20px;
+  }
+
+  .heroIcons {
+    display: none;
+  }
+}

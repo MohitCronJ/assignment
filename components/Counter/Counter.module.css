@@ -1,0 +1,99 @@
+.Counter {
+  background: #00c0f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 13rem;
+  padding: 2rem;
+}
+
+.section1,
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 .CounterTitle {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.section2 .CounterSubTitle {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .Counter {
+    height: 12rem;
+    padding: 1.5rem;
+  }
+
+  .section1,
+  .section2 {
+    text-align: center;
+  }
+  .section1 .CounterTitle {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .section2 .CounterSubTitle {
+    font-weight: 580;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Counter {
+    height: 9rem;
+    padding: 1rem;
+  }
+
+  .section1 .CounterTitle {
+    font-weight: 580;
+    font-size: 1.5rem;
+  }
+
+  .section2 .CounterSubTitle {
+    font-weight: 580;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Counter {
+    height: 9rem;
+    padding: 1rem;
+  }
+
+  .section1 .CounterTitle {
+    font-weight: 580;
+    font-size: 1.5rem;
+  }
+
+  .section2 .CounterSubTitle {
+    font-weight: 580;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .Counter {
+    height: 8rem;
+    padding: 0.8rem;
+  }
+
+  .section1 .CounterTitle {
+    font-weight: 580;
+    font-size: 1.3rem;
+  }
+
+  .section2 .CounterSubTitle {
+    font-weight: 580;
+    font-size: 0.9rem;
+  }
+}

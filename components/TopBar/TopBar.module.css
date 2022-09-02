@@ -1,0 +1,62 @@
+.topBarContainer {
+  width: 100vw;
+  height: 50px;
+  background-color: #034ea2;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.topBarSpan1 {
+  margin-left: 15px;
+  color: #fff;
+  opacity: 30%;
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+.topBarSpan2 {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  left: 6px;
+}
+
+.topBarButton {
+  /* margin-right: 40px; */
+  margin-left: 50px;
+  background-color: #ed0677;
+  height: 100%;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media screen and (max-width: 1009px) {
+  .topBarList {
+    display: none;
+  }
+  .menuButton {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .topBarButton {
+    display: none;
+  }
+  .tobBarHashtag {
+    position: relative;
+    left: 120px;
+  }
+  .topBarSpan1 {
+    display: none;
+  }
+  .menuButton {
+    position: relative;
+    right: 120px;
+  }
+}

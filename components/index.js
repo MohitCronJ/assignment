@@ -1,4 +1,11 @@
-export { default as TopBar } from "./TopBar";
+export { default as TopBar } from "./TopBar/TopBar";
 export { default as AppBar } from "./AppBar/AppBar";
-export { default as Hero } from "./Hero";
-export { default as Intro } from "./Intro";
+export { default as Hero } from "./Hero/Hero";
+export { default as Intro } from "./Intro/Intro";
+export { default as Services } from "./Services/Services";
+export { default as WhatsNew } from "./WhatsNew/WhatsNew";
+export { default as Careers } from "./Careers/Career";
+export { default as Testimonial } from "./Testimonial/Testimonial";
+export { default as TrustedPartner } from "./TrustedPartner/TrustedPartner";
+export { default as Form } from "./Form/Form";
+export { default as Footer } from "./Footer/Footer";

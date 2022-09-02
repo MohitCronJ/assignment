@@ -6,6 +6,46 @@
   color: #000;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
   white-space: nowrap;
+}
+
+.appBarMenu {
+  display: none;
+}
+
+@media screen and (max-width: 1009px) {
+  .appBarMenu {
+    display: flex;
+    position: relative;
+    right: 20px;
+  }
+  .appBarList {
+    display: none;
+  }
+  .appBarSearchIcon {
+    position: relative;
+    right: 40px;
+  }
+  .appBarLogo {
+    position: relative;
+    left: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .appBarMenu {
+    display: flex;
+    position: relative;
+    right: 20px;
+  }
+  .appBarList {
+    display: none;
+  }
+  .appBarSearchIcon {
+    position: relative;
+    right: 40px;
+  }
+  .appBarLogo {
+    position: relative;
+    left: 40px;
+  }
 }
